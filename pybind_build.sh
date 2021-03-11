@@ -1,0 +1,1 @@
+g++ -std=c++11 -shared `python2-config --cflags` cpp_utils/cpp_utils.cpp cpp_utils/gc_content_calculator.cpp cpp_utils/kmer_calculator.cpp -fPIC -o annotator/cpp_utils$(python2-config --extension-suffix) `python2-config --ldflags`
